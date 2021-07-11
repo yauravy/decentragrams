@@ -4,7 +4,7 @@ require('chai')
   .use(require('chai-as-promised'))
   .should()
 
-contract('Decentragram', ([deployer, author, tipper]) => {
+contract('decentragram', ([deployer, author, tipper]) => {
   let decentragram
 
   before(async () => {
@@ -22,7 +22,7 @@ contract('Decentragram', ([deployer, author, tipper]) => {
 
     it('has a name', async () => {
       const name = await decentragram.name()
-      assert.equal(name, 'Decentragram')
+      assert.equal(name, 'decentragram')
     })
   })
 
